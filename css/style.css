@@ -57,6 +57,51 @@
 	align-items: center;
 }
 
+.child2{
+	width: 60%;
+	margin: 1%;
+	padding: 1%;
+	border: 1px solid #ddd;
+	box-shadow: 0px 8px 8px -8px #000;
+	height: 350px;
+}
+
+ul li{
+	font-size: 18px;
+}
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: 1;
+}
+
+table{
+	width: 100%;
+}
+thead{
+	background: #000;
+	color: #fff;
+	padding: 1%;
+}
+
+tbody tr:nth-child(even){
+	background: #ddd;
+}
+.table-responsive{
+	overflow-x: flex;
+}
+.child2 span{
+	border-radius: 10px;
+	border:1px solid #5d6d7e;
+	background: #ddd;
+	padding: 1%;
+	margin: 1%;
+	box-shadow: 0px 8px 8px -8px #000;
+}
+
+
+
 /* Small Scale Devices*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
 	.child{
