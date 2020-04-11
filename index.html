@@ -63,7 +63,7 @@
 <body>
 	<section class="parent">
 		<article class="child">
-			<img src="images/userf.svg" class="profile">
+			<!-- <img src="images/userf.svg" class="profile">
 			<h2>Ambika</h2>
 			<h4 class="role">Technical Skill Trainer</h4><hr>
 			<div class="contact">
@@ -73,7 +73,7 @@
 				<img src="images/tel.svg" class="info"><a href="tel:+91 9491297660" class="link">91+ 9491297660</a>
 			</div><hr>
 			<a href="https://github.com/AmbikaPuvvula"><img src="images/github.svg" class="social"></a>
-			<a href="https://www.linkedin.com/in/ambika-puvvula-485641188"><img src="images/linkedin.svg" class="social"></a>
+			<a href="https://www.linkedin.com/in/ambika-puvvula-485641188"><img src="images/linkedin.svg" class="social"></a> -->
 		</article>
 		<!--<article class="child">
 			<img src="images/userm.svg" class="profile">
@@ -101,53 +101,68 @@
 
 			<h2>Education Qualifications</h2><hr>
 			<div class="table-responsive">
-			<table border="1" cellpadding="10" cellspacing="10">
-				<!-- Table Heading -->
-				<thead>
-					<tr>
-						<th>Degree</th>
-						<th>Institute</th>
-						<th>Percentage</th>
-					</tr>
-				</thead>
-				<!-- Table body -->
-				<tbody>
-					<tr>
-						<td>B.Tech(E.C.E)</td>
-						<td>Shri Vishnu Engineering College for Women</td>
-						<td>71.5%</td>
-					</tr>
-					<tr>
-						<td>Diplomo(E.C.E)</td>
-						<td>A.A.N.M & V.V.R.S.R Polytechnic</td>
-						<td>91.4%</td>
-					</tr>
-					<tr>
-						<td>SSC</td>
-						<td>Sree Rama Krishna High School</td>
-						<td>86%</td>
-					</tr>
-				</tbody>
-			</table>
+				<table border="1" cellpadding="10" cellspacing="10">
+					<!-- Table Heading -->
+					<thead>
+						<tr>
+							<th id="d">Degree</th>
+							<th id="d">Institute</th>
+							<th>Percentage</th>
+						</tr>
+					</thead>
+					<!-- Table body -->
+					<tbody>
+						<tr>
+							<td>B.Tech(E.C.E)</td>
+							<td>Shri Vishnu Engineering College for Women</td>
+							<td>71.5%</td>
+						</tr>
+						<tr>
+							<td>Diplomo(E.C.E)</td>
+							<td>A.A.N.M & V.V.R.S.R Polytechnic</td>
+							<td>91.4%</td>
+						</tr>
+						<tr>
+							<td>SSC</td>
+							<td>Sree Rama Krishna High School</td>
+							<td>86%</td>
+						</tr>
+						<!-- <tr>
+							<td colspan="3">SSC</td>
+							<td>Sree Rama Krishna High School</td>
+							<td>86%</td> 
+						</tr>
+						<tr>
+							<td rowspan="2">SSC</td>
+							<td>Sree Rama Krishna High School</td>
+							<td>86%</td>
+						</tr>
+						<tr>
+							<td>SSC</td>
+							<td>Sree Rama Krishna High School</td>
+							<td>86%</td>
+						</tr> -->
+					</tbody>
+				</table>
 			<!--<dl>
 				<dt>Favorite Food</dt>
 				<dd>Biryani</dd>
 				<dd>Any Dal</dd>
 			</dl>-->
-		</div>
+			</div>
 
-			<h2>Skill Set</h2><hr>
-			<h3>Ftrontend Technologies</h3>
+			<h2 class="title">Skill Set</h2><hr>
+			<h3 class="title">Frontend Technologies</h3>
 			<span>HTML5</span>
 			<span>CSS</span>
 			<span>Bootstrap</span>
-			<h3>Programming Languages</h3>
+			<h3 class="title">Programming Languages</h3>
 			<span>Python</span>
 			<span>Java Basics</span>
-			<h3>Operating Systems</h3>
+			<h3 class="title">Operating Systems</h3>
 			<span>Windows</span>
 			<span>Linux</span>
-			<h3> web Frameworks</h3>
+			<h3 class="title"> web Frameworks</h3>
 			<span>Flask</span>
 			<span>Django</span>
 		</article>
@@ -157,3 +172,41 @@
 	</div>-->
 </body>
 </html>
+<script>
+	/*var a = document.getElementsByTagName('h3');
+	console.log(a[0].innerHTML);
+	for (i in a){
+		console.log(a[i].innerHTML)
+	}
+	var a = document.getElementsByClassName('title');
+	for (i in a){
+		console.log(a[i].innerHTML)
+	}
+	var a = document.querySelector('.title');
+	console.log(a.textContent)
+	var heading=document.createElement("h1");
+	heading.setAttribute("id","h1");
+	heading.textContent="Hii.."
+	console.log(heading);
+	child.append(heading);
+	child.innerHTML="<h2>Hello...(:--</h2>"*/
+
+	var child=document.querySelector(".child");
+	var profileImage=document.createElement("img");
+	profileImage.src="images/userf.svg";
+	profileImage.classList.add("profile")
+	profileImage.style.boxShadow="3px 3px 3px #000";
+	child.append(profileImage);
+
+	var heading=document.createElement("h2");
+	heading.textContent="Ambika P";
+	child.append(heading);
+
+	var role=document.createElement("h4");
+	role.textContent="Technical Skill Trainer";
+	child.append(role);
+
+	var hr=document.createElement("hr");
+	child.append(hr);
+
+</script>

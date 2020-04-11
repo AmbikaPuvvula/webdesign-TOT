@@ -24,6 +24,7 @@
 	text-align: center;
 	box-shadow: 0px 8px 8px -8px #000;
 	border-radius: 10px 0px;
+	height: 350px;
 }
 .role{
 	color: #868892;
@@ -63,7 +64,6 @@
 	padding: 1%;
 	border: 1px solid #ddd;
 	box-shadow: 0px 8px 8px -8px #000;
-	height: 350px;
 }
 
 ul li{
